@@ -11,4 +11,4 @@ RUN openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
 RUN openssl dhparam -out /etc/nginx/dhparam.pem 4096
 EXPOSE 80
 #STOPSIGNAL SIGQUIT
-CMD ["nginx" "-g" "daemon off;"]
+CMD ["nginx","-g","daemon off;"]
